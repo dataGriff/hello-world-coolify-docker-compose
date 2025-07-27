@@ -88,6 +88,8 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml up
 
 Coolify will handle port mapping automatically, so no manual port configuration is needed.
 
+- [Coolify Link](http://oswoss8ggowsooscsk40g0cg.95.217.216.210.sslip.io/)
+
 ### Health Monitoring
 
 The application includes built-in health checks that Coolify will use to:
