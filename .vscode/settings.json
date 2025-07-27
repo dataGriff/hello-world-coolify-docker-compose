@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": true,
+  "javascript.validate.enable": true,
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript"
+  ],
+  "cSpell.words": [
+    "Coolify"
+  ]
+}
