@@ -1,15 +1,11 @@
-FROM node:14
+# Dockerfile.prod
+# Use the official NGINX image
+FROM nginx:alpine
 
-WORKDIR /usr/src/app
+# Copy the production HTML files into the default NGINX public directory
+COPY ./web /usr/share/nginx/html
 
-# Copy package.json and package-lock.json (if available)
-COPY src/package*.json ./
+# Expose port 80 (the default port NGINX listens on)
+EXPOSE 80
 
-# Install dependencies
-RUN npm install
-
-# Copy the rest of the application code
-COPY src/ .
-
-EXPOSE 3000
-CMD ["node", "app.js"]
+# Start NGINX (this is the default behavior, no CMD or ENTRYPOINT needed)
