@@ -1,14 +1,18 @@
 {
-  "name": "hello-world-coolify",
+  "name": "hello-world-app",
   "version": "1.0.0",
-  "description": "A simple Hello World application to demonstrate Docker Compose deployment on Coolify.",
+  "description": "A simple Hello World application for Coolify deployment",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "node app.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
