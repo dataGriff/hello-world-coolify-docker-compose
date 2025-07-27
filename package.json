@@ -1,0 +1,14 @@
+{
+    "name": "hello-world-coolify",
+    "version": "1.0.0",
+    "description": "Hello World application for Coolify deployment",
+    "scripts": {
+        "docker:local": "docker compose -f docker-compose.yml -f docker-compose.local.yml up",
+        "docker:local:build": "docker compose -f docker-compose.yml -f docker-compose.local.yml up --build",
+        "docker:local:down": "docker compose -f docker-compose.yml -f docker-compose.local.yml down",
+        "docker:prod": "docker compose -f docker-compose.yml -f docker-compose.prod.yml up",
+        "docker:prod:build": "docker compose -f docker-compose.yml -f docker-compose.prod.yml up --build"
+    },
+    "author": "",
+    "license": "MIT"
+}

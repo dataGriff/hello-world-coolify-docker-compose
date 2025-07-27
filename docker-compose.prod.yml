@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    environment:
+      - ENV=production
+      - DEBUG=false
+    restart: always
